@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="454" font-family="system-ui, sans-serif" font-size="13">
+<rect width="1100" height="454" fill="#ffffff"/>
+<text x="260" y="28" font-size="16" font-weight="600" fill="#111827">CRC-32: should you rewrite it in C? - 1,000 bytes</text>
+<line x1="260.0" y1="56" x2="260.0" y2="402" stroke="#e5e7eb"/>
+<text x="260.0" y="418" text-anchor="middle" fill="#6b7280">100 ns</text>
+<line x1="417.5" y1="56" x2="417.5" y2="402" stroke="#e5e7eb"/>
+<text x="417.5" y="418" text-anchor="middle" fill="#6b7280">1 µs</text>
+<line x1="575.0" y1="56" x2="575.0" y2="402" stroke="#e5e7eb"/>
+<text x="575.0" y="418" text-anchor="middle" fill="#6b7280">10 µs</text>
+<line x1="732.5" y1="56" x2="732.5" y2="402" stroke="#e5e7eb"/>
+<text x="732.5" y="418" text-anchor="middle" fill="#6b7280">100 µs</text>
+<line x1="890.0" y1="56" x2="890.0" y2="402" stroke="#e5e7eb"/>
+<text x="890.0" y="418" text-anchor="middle" fill="#6b7280">1 ms</text>
+<text x="250" y="80.8" text-anchor="end" fill="#111827">C calling zlib</text>
+<rect x="260" y="64" width="79.6" height="24" rx="3" fill="#2563eb"/>
+<text x="345.6" y="80.8" fill="#111827">320 ns  ·  1,620x faster</text>
+<text x="250" y="112.8" text-anchor="end" fill="#111827">C -O2, slicing-by-8</text>
+<rect x="260" y="96" width="103.0" height="24" rx="3" fill="#2563eb"/>
+<text x="369.0" y="112.8" fill="#111827">451 ns  ·  1,149x faster</text>
+<text x="250" y="144.8" text-anchor="end" fill="#111827">Python calling zlib once</text>
+<rect x="260" y="128" width="107.4" height="24" rx="3" fill="#7c3aed"/>
+<text x="373.4" y="144.8" fill="#111827">481 ns  ·  1,078x faster</text>
+<text x="250" y="176.8" text-anchor="end" fill="#111827">C -O2, table</text>
+<rect x="260" y="160" width="208.7" height="24" rx="3" fill="#2563eb"/>
+<text x="474.7" y="176.8" fill="#111827">2.11 µs  ·  245x faster</text>
+<text x="250" y="208.8" text-anchor="end" fill="#111827">Python calling my C table</text>
+<rect x="260" y="192" width="212.8" height="24" rx="3" fill="#059669"/>
+<text x="478.8" y="208.8" fill="#111827">2.25 µs  ·  231x faster</text>
+<text x="250" y="240.8" text-anchor="end" fill="#111827">C -O2, bitwise</text>
+<rect x="260" y="224" width="290.0" height="24" rx="3" fill="#2563eb"/>
+<text x="556.0" y="240.8" fill="#111827">6.94 µs  ·  75x faster</text>
+<text x="250" y="272.8" text-anchor="end" fill="#111827">C -O0, bitwise</text>
+<rect x="260" y="256" width="305.4" height="24" rx="3" fill="#2563eb"/>
+<text x="571.4" y="272.8" fill="#111827">8.69 µs  ·  60x faster</text>
+<text x="250" y="304.8" text-anchor="end" fill="#111827">Python calling zlib per byte</text>
+<rect x="260" y="288" width="448.6" height="24" rx="3" fill="#7c3aed"/>
+<text x="714.6" y="304.8" fill="#111827">70.5 µs  ·  7.4x faster</text>
+<text x="250" y="336.8" text-anchor="end" fill="#111827">Python, table</text>
+<rect x="260" y="320" width="456.7" height="24" rx="3" fill="#d97706"/>
+<text x="722.7" y="336.8" fill="#111827">79.4 µs  ·  6.5x faster</text>
+<text x="250" y="368.8" text-anchor="end" fill="#111827">Python, bitwise</text>
+<rect x="260" y="352" width="585.1" height="24" rx="3" fill="#d97706"/>
+<text x="851.1" y="368.8" fill="#111827">518 µs</text>
+<text x="575.0" y="442" text-anchor="middle" fill="#374151">time for 1,000 bytes (log scale), shorter is faster; &quot;x faster&quot; compares with Python, bitwise</text>
+<rect x="260" y="40" width="12" height="12" fill="#2563eb"/>
+<text x="277" y="51" fill="#374151">C</text>
+<rect x="298" y="40" width="12" height="12" fill="#7c3aed"/>
+<text x="315" y="51" fill="#374151">Python + C library</text>
+<rect x="472" y="40" width="12" height="12" fill="#059669"/>
+<text x="489" y="51" fill="#374151">Python + my C</text>
+<rect x="606" y="40" width="12" height="12" fill="#d97706"/>
+<text x="623" y="51" fill="#374151">Python</text>
+</svg>
